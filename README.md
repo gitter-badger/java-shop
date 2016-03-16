@@ -1,4 +1,4 @@
-# JavaShop technical specification.
+# JavaShop technical specification v0.1
 
 ### Table of contents:
 1. [Features](#features)
