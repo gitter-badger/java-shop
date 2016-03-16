@@ -160,6 +160,7 @@
 * Order
   * id
   * cart_id
+  * status
   * created_at
   * ...
 * Page
