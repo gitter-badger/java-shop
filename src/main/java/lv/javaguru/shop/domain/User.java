@@ -1,4 +1,4 @@
-package lv.javaguru.java2.domain;
+package lv.javaguru.shop.domain;
 
 /**
  * Created by Viktor on 01/07/2014.

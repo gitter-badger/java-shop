@@ -1,4 +1,4 @@
-package lv.javaguru.java2.database.jdbc;
+package lv.javaguru.shop.database.jdbc;
 
 import static org.junit.Assert.*;
 
@@ -7,8 +7,8 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-import lv.javaguru.java2.database.DBException;
-import lv.javaguru.java2.domain.User;
+import lv.javaguru.shop.database.DBException;
+import lv.javaguru.shop.domain.User;
 
 
 public class UserDAOImplTest {

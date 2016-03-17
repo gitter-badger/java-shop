@@ -1,4 +1,4 @@
-package lv.javaguru.java2.servlet;
+package lv.javaguru.shop.servlet;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
@@ -8,18 +8,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by Viktor on 13/07/2014.
- */
-public class RedirectToJSPServlet extends HttpServlet {
-
+public class IndexServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response) throws ServletException, IOException {
         // Prepare output html
         ServletContext servletContext = getServletContext();
-        RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("/helloWorld.jsp");
+        RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("/views/index.jsp");
         requestDispatcher.forward(request, response);
     }
-
 }

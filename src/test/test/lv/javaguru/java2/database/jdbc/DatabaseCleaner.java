@@ -1,6 +1,6 @@
-package lv.javaguru.java2.database.jdbc;
+package lv.javaguru.shop.database.jdbc;
 
-import lv.javaguru.java2.database.DBException;
+import lv.javaguru.shop.database.DBException;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

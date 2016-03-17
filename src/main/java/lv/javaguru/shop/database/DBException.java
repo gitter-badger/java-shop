@@ -1,4 +1,4 @@
-package lv.javaguru.java2.database;
+package lv.javaguru.shop.database;
 
 /**
  * Created by Viktor on 01/07/2014.

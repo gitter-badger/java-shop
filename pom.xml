@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>lv.javaguru</groupId>
-    <artifactId>java2</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>shop</artifactId>
+    <version>1.0</version>
 
     <packaging>war</packaging>
 
@@ -45,7 +45,6 @@
 
 
     <build>
-        <finalName>java2</finalName>
         
         <plugins>
 
@@ -63,6 +62,9 @@
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.1</version>
+                <configuration>
+                    <path>/</path>
+                </configuration>
             </plugin>
 
             <plugin>
@@ -71,7 +73,7 @@
                 <version>8.1.14.v20131031</version>
                 <configuration>
                     <webApp>
-                        <contextPath>/java2</contextPath>
+                        <contextPath>/</contextPath>
                     </webApp>
                 </configuration>
             </plugin>

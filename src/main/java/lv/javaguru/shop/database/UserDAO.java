@@ -1,6 +1,6 @@
-package lv.javaguru.java2.database;
+package lv.javaguru.shop.database;
 
-import lv.javaguru.java2.domain.User;
+import lv.javaguru.shop.domain.User;
 
 import java.util.List;
 
