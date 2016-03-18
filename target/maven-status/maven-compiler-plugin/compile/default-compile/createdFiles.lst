@@ -1,6 +1,0 @@
-lv/javaguru/shop/servlet/IndexServlet.class
-lv/javaguru/shop/database/DBException.class
-lv/javaguru/shop/database/jdbc/UserDAOImpl.class
-lv/javaguru/shop/database/UserDAO.class
-lv/javaguru/shop/domain/User.class
-lv/javaguru/shop/database/jdbc/DAOImpl.class

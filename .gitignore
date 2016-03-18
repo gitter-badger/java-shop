@@ -1,6 +1,11 @@
-#java specific
 *.class
-
-#IDEA ignore personal project settings
-.idea/
 *.iml
+
+.classpath
+.project
+.mtj
+.tmp
+.settings
+.idea/
+
+target/
