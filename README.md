@@ -1,5 +1,7 @@
 # JavaShop technical specification v0.1
 
+[![Build Status](https://travis-ci.org/connected/java-shop.svg?branch=master)](https://travis-ci.org/connected/java-shop)
+
 ### Table of contents:
 1. [Features](#features)
 2. [Front-end page structure](#front-end-page-structure)
