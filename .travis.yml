@@ -4,9 +4,11 @@ before_script:
  - "export JAVA_OPTS=-Xmx1024m"
 script: mvn -q clean install
 jdk:
-  - openjdk6
-  - openjdk7
-  - oraclejdk7
+  - oraclejdk8
+
+services:
+  - mysql
+
 # whitelist
 branches:
   only:
