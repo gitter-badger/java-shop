@@ -7,7 +7,6 @@ before_script:
 
 script:
   mvn -q clean install
-  mvn test
 jdk:
   - oraclejdk8
 
