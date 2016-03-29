@@ -2,6 +2,9 @@ language: java
 before_script:
  - "echo $JAVA_OPTS"
  - "export JAVA_OPTS=-Xmx1024m"
+ - "export database_username='travis'"
+ - "export database_password=''"
+
 script:
   mvn -q clean install
   mvn test
@@ -15,10 +18,6 @@ services:
 branches:
   only:
     - master
-env:
-  global:
-    database_username: travis
-    database_password: ''
 
 before_script:
   - mysql < ./database/databaseCreationScript.sql
