@@ -5,8 +5,7 @@ before_script:
  - "export database_username='travis'"
  - "export database_password=''"
 
-script:
-  mvn -q clean install
+script: "mvn -q clean install && mvn test && mvn verify"
 jdk:
   - oraclejdk8
 
