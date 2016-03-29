@@ -15,3 +15,10 @@ services:
 branches:
   only:
     - master
+env:
+  global:
+    database_username: travis
+    database_password: ''
+
+before_script:
+  - mysql < ./database/databaseCreationScript.sql

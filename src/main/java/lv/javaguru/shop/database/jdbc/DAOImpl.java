@@ -37,7 +37,17 @@ public class DAOImpl {
     private void initDatabaseConnectionProperties() {
         Properties properties = new Properties();
         try {
+            String databaseUsernameFromEnvironment = System.getenv("database_username");
+            String databasePasswordFromEnvironment = System.getenv("database_password");
             properties.load(DAOImpl.class.getClassLoader().getResourceAsStream(DB_CONFIG_FILE));
+
+            if (databaseUsernameFromEnvironment != null) {
+                properties.setProperty("userName", databaseUsernameFromEnvironment);
+            }
+
+            if (databasePasswordFromEnvironment != null) {
+                properties.setProperty("password", databasePasswordFromEnvironment);
+            }
 
             dbUrl = properties.getProperty("dbUrl");
             userName = properties.getProperty("userName");
