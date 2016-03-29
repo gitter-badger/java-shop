@@ -7,10 +7,6 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-
-/**
- * Created by maris on 3/29/16.
- */
 public interface Filter {
     void init(FilterConfig filterConfig) throws ServletException;
 

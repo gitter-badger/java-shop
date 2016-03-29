@@ -1,8 +1,5 @@
 package lv.javaguru.shop.servlet.mvc;
 
-/**
- * Created by maris on 3/29/16.
- */
 public class MVCModel {
     private String jspName;
     private Object data;
