@@ -1,4 +1,4 @@
-# JavaShop technical specification v0.1
+# JavaShop technical specification v0.2
 
 [![Build Status](https://travis-ci.org/connected/java-shop.svg?branch=master)](https://travis-ci.org/connected/java-shop)
 
@@ -26,24 +26,24 @@
 
 ### Front-end page structure:
 * All pages
-  * Search form
+  * ~~Search form~~
   * Navigation menu
   * Category menu
   * Cart widget
     * Items counter
-    * Items table
-      * Product title
-      * Quantity
-      * Price
+    * ~~Items table~~
+      * ~~Product title~~
+      * ~~Quantity~~
+      * ~~Price~~
     * Total price
-    * Checkout button
-  * User profile widget
-    * Login form
-      * E-mail
-      * Password
-      * "Remember me" checkbox
-    * Profile link
-    * Logout link
+    * Checkout button/icon
+  * ~~User profile widget~~
+    * ~~Login form~~
+      * ~~E-mail~~
+      * ~~Password~~
+      * ~~"Remember me" checkbox~~
+    * ~~Profile link~~
+    * ~~Logout link~~
 * Success page
   * Success message
   * Continue button
@@ -51,18 +51,21 @@
   * Error message
   * Back button
 * Home page
-  * Featured products list
-  * Most popular products list
-  * Last added products list
+  * ~~Featured products list~~
+  * ~~Most popular products list~~
+  * ~~Last added products list~~
+  * Categories list
+    *  Category image (thumbnail)
+    *  Category title
 * Category page (search result page)
-  * Sort form
-  * Breadcrumbs block
+  * ~~Sort form~~
+  * ~~Breadcrumbs block~~
   * Product list
   * Child categories
-  * Attrbute filter
+  * ~~Attrbute filter~~
   * Product pagination
 * Product page
-  * Breadcrumbs block
+  * ~~Breadcrumbs block~~
   * Product title
   * Product image
   * Product description
@@ -70,26 +73,26 @@
   * Add to cart button
   * Price label
   * Back to category button
-* User registration page
-  * Personal information form
-    * First name
-    * Last name
-    * Phone
-    * Address
-    * E-mail
-    * Password
-* User profile page
-  * Personal information
-    * Edit button
-  * My orders
-    * Orders list
-      * Order items table
-        * Product title
-        * Quantity
-        * Price
-      * Order total price
-      * Order status
-    * Orders pagination
+* ~~User registration page~~
+  * ~~Personal information form~~
+    * ~~First name~~
+    * ~~Last name~~
+    * ~~Phone~~
+    * ~~Address~~
+    * ~~E-mail~~
+    * ~~Password~~
+* ~~User profile page~~
+  * ~~Personal information~~
+    * ~~Edit button~~
+  * ~~My orders~~
+    * ~~Orders list~~
+      * ~~Order items table~~
+        * ~~Product title~~
+        * ~~Quantity~~
+        * ~~Price~~
+      * ~~Order total price~~
+      * ~~Order status~~
+    * ~~Orders pagination~~
 * Cart page
   * Items table
     * Product title
@@ -98,9 +101,9 @@
   * Total price
   * Checkout button
 * Checkout page
-  * Login form
-    * E-mail
-    * Password
+  * ~~Login form~~
+    * ~~E-mail~~
+    * ~~Password~~
   * Personal information form
     * First name
     * Last name
@@ -127,6 +130,17 @@
 
 ### Back-end page structure:
 
+### Front-end routes:
+* /
+  * /category
+  * /product
+  * /cart
+  * /checkout
+    * /review 
+  * ~~/user~~
+  * /order
+    * /success 
+  * /page
 
 ### Database structure:
 * User
