@@ -6,7 +6,8 @@
 1. [Features](#features)
 2. [Front-end page structure](#front-end-page-structure)
 3. [Back-end page structure](#back-end-page-structure)
-4. [Database structure](#database-structure)
+4. [Front-end routes](#front-end-routes) 
+5. [Database structure](#database-structure)
 
 ### Features:
 * Unlimited category count
