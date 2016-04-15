@@ -1,14 +1,22 @@
 package lv.javaguru.shop.controller;
 
+import lv.javaguru.shop.domain.Product;
+import lv.javaguru.shop.repository.ProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
-    @RequestMapping
+    @Autowired
+    private ProductRepository productRepository;
+
+    @RequestMapping("/")
     public String index(Model model) {
-        model.addAttribute("name", "Dmitry");
+        Iterable<Product> products = productRepository.findAll();
+        model.addAttribute("products", products);
+
         return "index";
     }
 }
