@@ -1,6 +1,7 @@
 # JavaShop technical specification v0.2
 
 [![Build Status](https://travis-ci.org/connected/java-shop.svg?branch=master)](https://travis-ci.org/connected/java-shop)
+[![Coverage Status](https://coveralls.io/repos/github/connected/java-shop/badge.svg?branch=master)](https://coveralls.io/github/connected/java-shop?branch=master)
 
 ### Table of contents:
 1. [Features](#features)
