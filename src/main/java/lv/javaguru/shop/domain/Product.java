@@ -15,12 +15,16 @@ public class Product {
     private String name;
     private Long qty;
 
+    @ManyToMany
+    private List<Category> categories;
+
     @ElementCollection
     private List<String> images;
     private Double price;
     private Date createdAt;
 
     public Product() {
+        categories = new LinkedList<>();
         images = new LinkedList<>();
         createdAt = new Date();
     }
@@ -79,5 +83,13 @@ public class Product {
 
     public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
+    }
+
+    public List<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<Category> categories) {
+        this.categories = categories;
     }
 }
