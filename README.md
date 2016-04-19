@@ -144,6 +144,11 @@
     * /success 
   * /page
 
+### Back-end routes:
+* /
+  * /category
+  * /product
+
 ### Database structure:
 * User
   * id
