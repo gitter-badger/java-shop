@@ -6,21 +6,30 @@ import java.util.LinkedList;
 import java.util.List;
 
 @Entity
-@Table
+@Table(name = "products")
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private Long id;
 
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "qty")
     private Long qty;
 
     @ManyToMany
     private List<Category> categories;
 
     @ElementCollection
+    @Column(name = "images")
     private List<String> images;
+
+    @Column(name = "price")
     private Double price;
+
+    @Column(name = "created_at")
     private Date createdAt;
 
     public Product() {

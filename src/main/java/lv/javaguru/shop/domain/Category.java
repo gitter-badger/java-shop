@@ -3,11 +3,14 @@ package lv.javaguru.shop.domain;
 import javax.persistence.*;
 
 @Entity
-@Table
+@Table(name = "categories")
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name="id")
     private Long id;
+
+    @Column(name = "name")
     private String name;
 
     public Long getId() {
