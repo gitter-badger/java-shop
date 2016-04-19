@@ -1,4 +1,4 @@
-package lv.javaguru.shop.domain;
+package lv.javaguru.shop.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;

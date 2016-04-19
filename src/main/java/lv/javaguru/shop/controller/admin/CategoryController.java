@@ -1,6 +1,6 @@
 package lv.javaguru.shop.controller.admin;
 
-import lv.javaguru.shop.domain.Category;
+import lv.javaguru.shop.entity.Category;
 import lv.javaguru.shop.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

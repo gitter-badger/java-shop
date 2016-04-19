@@ -1,6 +1,6 @@
 package lv.javaguru.shop.controller;
 
-import lv.javaguru.shop.domain.Product;
+import lv.javaguru.shop.entity.Product;
 import lv.javaguru.shop.exception.ProductNotFoundException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

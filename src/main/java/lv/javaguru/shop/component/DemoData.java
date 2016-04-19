@@ -3,6 +3,7 @@ package lv.javaguru.shop.component;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import lv.javaguru.shop.demodata.InitialDataContainer;
+import lv.javaguru.shop.repository.CategoryRepository;
 import lv.javaguru.shop.repository.ProductRepository;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ import java.io.IOException;
 class DemoData {
     private static final Logger logger = Logger.getLogger(DemoData.class);
     private ProductRepository productRepository;
+    private CategoryRepository categoryRepository;
 
     @PostConstruct
     public void dataLoader() throws IOException {
@@ -30,10 +32,20 @@ class DemoData {
             logger.info("Loading initial data for products table");
             productRepository.save(demoData.getProducts());
         }
+
+        if (categoryRepository.count() == 0) {
+            logger.info("Loading initial data for products table");
+            categoryRepository.save(demoData.getCategories());
+        }
     }
 
     @Autowired
     public void setProductRepository(ProductRepository productRepository) {
         this.productRepository = productRepository;
+    }
+
+    @Autowired
+    public void setCategoryRepository(CategoryRepository categoryRepository) {
+        this.categoryRepository = categoryRepository;
     }
 }
