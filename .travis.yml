@@ -1,21 +1,9 @@
 language: java
-before_script:
- - "echo $JAVA_OPTS"
- - "export JAVA_OPTS=-Xmx1024m"
- - "export database_username='travis'"
- - "export database_password=''"
-
-script: "mvn -q clean install && mvn test && mvn verify"
+sudo: false
 jdk:
   - oraclejdk8
-
 services:
   - mysql
-
-# whitelist
 branches:
   only:
     - master
-
-before_script:
-  - mysql < ./database/databaseCreationScript.sql
