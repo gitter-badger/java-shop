@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/java_shop
+    username: travis
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  velocity:
+    cache: false
+    toolbox-config-location: toolbox.xml
+  profiles:
+    include: local

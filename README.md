@@ -1,3 +1,20 @@
+# JavaShop
+
+## Local environment config
+
+Create a file called `application-local.yaml` and
+stick it in the root of your classpath `/src/main/resources/application-local.yaml`:
+
+```yaml
+spring:
+  datasource:
+    username: mysql_username
+    password: mysql_password
+```
+
+The example YAML above corresponds to an `application.yaml` file
+
+
 # JavaShop technical specification v0.2
 
 [![Build Status](https://travis-ci.org/connected/java-shop.svg?branch=master)](https://travis-ci.org/connected/java-shop)
