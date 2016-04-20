@@ -17,6 +17,22 @@ public class Category {
     @Size(min = 3)
     private String name;
 
+    @ManyToOne
+    private Category parentCategory;
+
+    public Category() {
+
+    }
+
+    public Category(String name) {
+        this.name = name;
+    }
+
+    public Category(String name, Category parentCategory) {
+        this.name = name;
+        this.parentCategory = parentCategory;
+    }
+
     public Long getId() {
         return id;
     }
@@ -31,5 +47,13 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Category getparentCategory() {
+        return parentCategory;
+    }
+
+    public void setparentCategory(Category parent) {
+        this.parentCategory = parent;
     }
 }
