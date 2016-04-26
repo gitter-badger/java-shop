@@ -1,0 +1,16 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+<row centered>
+    <column cols="6">
+        <h1>{{ product.name }}</h1>
+        <mark>{{ product.price }} &euro;</mark>
+        <div class="fotorama">
+            {% for image in product.images %}
+                <img src="{{ image }}">
+            {% endfor %}
+        </div>
+        <mark>{{ product.price }} &euro;</mark>
+    </column>
+</row>
+{% endblock %}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Shop{% endblock %}</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="/kube.min.css">
+        <style>
+            .truncate {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .-product-name {
+                display: block;
+            }
+        </style>
+
+        <link  href="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    {% endblock %}
+</head>
+<body>
+    {% block body %}{% endblock %}
+
+    {% block javascripts %}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    {% endblock %}
+</body>
+</html>

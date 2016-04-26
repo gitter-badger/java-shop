@@ -7,8 +7,5 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-  velocity:
-    cache: false
-    toolbox-config-location: toolbox.xml
   profiles:
     include: local

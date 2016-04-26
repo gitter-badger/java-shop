@@ -1,0 +1,20 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <row centered>
+        <column cols="6">
+            <blocks cols="3">
+                {% for product in products %}
+                    <div>
+                        <a href="/products/{{ product.id }}" class="truncate thin -product-name">{{ product.name }}</a>
+                        {% if product.images|length %}
+                            <img src="{{ product.images|first }}" alt="img"/>
+                        {% endif %}
+
+                        <mark>{{ product.price }} &euro;</mark>
+                    </div>
+                {% endfor %}
+            </blocks>
+        </column>
+    </row>
+{% endblock %}
