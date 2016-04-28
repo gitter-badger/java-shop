@@ -1,5 +1,7 @@
 # JavaShop
 
+[![Join the chat at https://gitter.im/connected/java-shop](https://badges.gitter.im/connected/java-shop.svg)](https://gitter.im/connected/java-shop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://travis-ci.org/connected/java-shop.svg?branch=master)](https://travis-ci.org/connected/java-shop)
 [![Coverage Status](https://coveralls.io/repos/github/connected/java-shop/badge.svg?branch=master)](https://coveralls.io/github/connected/java-shop?branch=master)
 
